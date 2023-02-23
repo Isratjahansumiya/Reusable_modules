@@ -1,0 +1,104 @@
+:root {
+    --primary: #ee2355;
+    --secondary: #ffb020;
+    --blue: #15059d;
+    --darkBlue: #20929b;
+    --white: #f9f9fa;
+    --lightGrey: #f0c1c1;
+    --grey: #8e8e8e;
+    --darkGrey: #303030;
+    --red: #dd2222;
+    --green: #6fbe44;
+    --backgroundGrey: #eeeeee;
+}
+
+.Button {
+    border: none;
+    border-radius: 10px;
+    color: var(--darkGrey);
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Poppins';
+    font-size: 120%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 4px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.25s;
+    width: 120px;
+    -webkit-transition: all 0.2s ease-in;
+    box-shadow: 0 1px 1px rgba(var(--darkGrey), 0.3);
+}
+
+.Button:hover {
+    box-shadow: 0 3px 1px rgba(var(--darkGrey), 0.3);
+}
+
+.Button:focus {
+    outline: none;
+    filter: brightness(.9);
+}
+
+/* Colors */
+
+.default {
+    background: var(--backgroundGrey);
+}
+
+/*.primary {
+    background-image: linear-gradient(135deg, var(--primary), var(--accent), var(--white) 47%, var(--primary) 52%, var(--accent));
+    background-size: 300%;
+}*/
+
+.primary {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.secondary {
+    background: var(--secondary);
+    color: var(--white);
+}
+.accent {
+    background: none;
+    border: solid 2px var(--primary);
+}
+
+.accent:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.danger {
+    background: var(--red);
+    color: var(--white);
+}
+
+.link {
+    background: transparent;
+    box-shadow: none;
+    color: var(--primary);
+}
+
+/* Sizes */
+
+/* Small button */
+.small {
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+/* Medium button */
+.medium {
+    font-size: 14px;
+    padding: 10px 16px;
+    width: 150px;
+}
+
+/* Large button */
+.large {
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 200px;
+}
